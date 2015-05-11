@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/pv_wv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pv_bottombar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </WebView>
+
+    <Button
+        style="@style/wrap24"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="clear"
+        android:text="@string/clear" />
+
+    <RelativeLayout
+        android:id="@+id/pv_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/pv_back"
+            style="@style/wrap24"
+            android:layout_alignParentLeft="true"
+            android:onClick="back"
+            android:text="@string/back" />
+
+        <TextView
+            style="@style/wrap18"
+            android:layout_alignBottom="@+id/pv_back"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/pv_send"
+            android:layout_toRightOf="@+id/pv_back"
+            android:gravity="center"
+            android:text="@string/pv_title" />
+
+        <Button
+            android:id="@+id/pv_send"
+            style="@style/wrap24"
+            android:layout_alignParentRight="true"
+            android:onClick="send"
+            android:text="@string/send" >
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/David/SkyDrive/Android%20Studio%20Projects/Invoicer/app/src/main/res/layout/preview.xml -->

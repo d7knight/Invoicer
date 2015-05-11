@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ft_bottombar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/ft_panes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ft_leftcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/wrap18"
+                    android:text="@string/ft_toptxt" />
+
+                <TextView
+                    style="@style/wrap18"
+                    android:text="@string/ft_company" />
+
+                <EditText
+                    android:id="@+id/ft_cmp_name"
+                    style="@style/wrap24"
+                    android:hint="@string/ft_company" />
+
+                <TextView
+                    style="@style/wrap18"
+                    android:text="@string/ft_greet" />
+
+                <EditText
+                    android:id="@+id/ft_greeting"
+                    style="@style/wrap24"
+                    android:hint="@string/ft_greet" />
+
+                <TextView
+                    style="@style/wrap18"
+                    android:text="@string/ft_tax" />
+
+                <EditText
+                    android:id="@+id/ft_tax"
+                    style="@style/wrap24"
+                    android:hint="@string/ft_tax"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ft_more"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <CheckedTextView
+                    android:id="@+id/ft_ctv"
+                    style="@style/wrap18"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="noLogo"
+                    android:text="@string/ft_nologo" >
+                </CheckedTextView>
+
+                <TextView
+                    style="@style/wrap18"
+                    android:text="@string/ft_txname" />
+
+                <EditText
+                    android:id="@+id/ft_txname"
+                    style="@style/wrap24"
+                    android:hint="@string/ft_txname" />
+
+                <Button
+                    style="@style/wrap18"
+                    android:onClick="pickImage"
+                    android:text="@string/ft_logo" >
+                </Button>
+
+                <Button
+                    style="@style/wrap18"
+                    android:onClick="resetLogo"
+                    android:text="@string/ft_logor" >
+                </Button>
+
+                <TextView
+                    style="@style/wrap18"
+                    android:text="@string/ft_currency" />
+
+                <EditText
+                    style="@style/wrap24"
+                    android:id="@+id/ft_currency"
+                    android:maxLength="1"
+                    android:hint="@string/ft_currency" />
+
+                <CheckedTextView
+                    android:id="@+id/ft_currpos"
+                    style="@style/wrap18"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="currPos"
+                    android:text="@string/ft_currpos" >
+                </CheckedTextView>
+
+                <TextView
+                    style="@style/wrap18"
+                    android:text="@string/ft_invname" />
+
+                <EditText
+                    android:id="@+id/ft_invname"
+                    style="@style/wrap24"
+                    android:hint="@string/ft_invname" />
+            
+               <TextView
+                    style="@style/wrap18"
+                    android:text="@string/ft_invnum" />
+
+                <EditText
+                    android:id="@+id/ft_invnum"
+                    style="@style/wrap24"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:hint="@string/ft_invnum" />
+                
+                
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/ft_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            style="@style/wrap24"
+            android:layout_alignParentLeft="true"
+            android:onClick="more"
+            android:text="@string/ft_more" />
+
+        <Button
+            style="@style/wrap24"
+            android:layout_alignParentRight="true"
+            android:onClick="next"
+            android:text="@string/next" />
+    </RelativeLayout>
+
+</RelativeLayout>

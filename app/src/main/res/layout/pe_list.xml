@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="org.mangelok.siminvpro.activities.ProductList" >
+
+    <ListView
+        android:layout_alignParentTop="true"
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pe_content" >
+    </ListView>
+
+    <TextView
+        android:id="@android:id/empty"
+        style = "@style/wrap24"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/pe_content"
+        android:text="@string/pe_null" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/pe_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <Button
+            style="@style/fillw24"
+            android:onClick="addProduct"
+            android:text="@string/pe_create">
+        </Button>
+
+        <Button
+            style="@style/fillw24"
+            android:onClick="email"
+            android:text="@string/pe_email">
+        </Button>
+
+        <Button
+            style="@style/fillw24"
+            android:onClick="saveAndClose"
+            android:text="@string/pe_save">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

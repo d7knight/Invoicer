@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- -DO NOT CHANGE THIS FILE! -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pld_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/fill18"
+                android:text="@string/pl_amount" >
+            </TextView>
+
+            <org.mangelok.invoicer.utilities.NumberPicker
+                style="@style/wrap24" >
+            </org.mangelok.invoicer.utilities.NumberPicker>
+
+            <TextView
+                style="@style/fill18"
+                android:text="@string/pl_type" >
+            </TextView>
+
+            <Spinner style="@style/fill18" >
+            </Spinner>
+
+            <TextView
+                style="@style/fill18"
+                android:text="@string/pl_comments" >
+            </TextView>
+
+            <EditText
+                style="@style/fill24"
+                android:hint="@string/pl_comments"
+                android:imeOptions="actionDone"
+                android:singleLine="true" >
+            </EditText>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/pld_content" >
+
+            <Button
+                style="@style/wrap24"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/submit" >
+            </Button>
+
+            <Button
+                style="@style/wrap24"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/cancel" >
+            </Button>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

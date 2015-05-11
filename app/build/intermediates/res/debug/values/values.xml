@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/David/SkyDrive/Android%20Studio%20Projects/Invoicer/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <color name="bbui_bg">#262626</color>
+    <color name="bbui_bt">#FFFFFF</color>
+    <color name="bbui_dv">#242424</color>
+    <!-- From: file:/C:/Users/David/SkyDrive/Android%20Studio%20Projects/Invoicer/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">Invoicer</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="ci_address">Address</string>
+    <string name="ci_phone">Phone Number</string>
+    <string name="ci_tag">Customer Tag</string>
+    <string name="ci_title">Step 1:\nCustomer Information</string>
+    <string name="clear">Clear</string>
+    <string name="ft_company">Company name and contact information</string>
+    <string name="ft_currency">Currency Symbol</string>
+    <string name="ft_currpos">Currency Symbol is a Prefix</string>
+    <string name="ft_greet">Greeting attached to end of invoices</string>
+    <string name="ft_invname">Invoice Title</string>
+    <string name="ft_invnum">Invoice ID Offset (ID = offset + Invoice Number)</string>
+    <string name="ft_less">Less Options</string>
+    <string name="ft_logo">Change Company Logo (PNG Format ONLY)</string>
+    <string name="ft_logor">Reset Logo to Default</string>
+    <string name="ft_more">More Options</string>
+    <string name="ft_nologo">Use Company Logo</string>
+    <string name="ft_tax">Tax percentage</string>
+    <string name="ft_toptxt">Thank you for installing Invoicer: an easy to use invoice app intended for 
+        small businesses.\nIf you have any feedback 
+        regarding this application, feel free to send me an email at makbusiness123@gmail.com\n\n\nTo get started, please fill in the required information below.\n
+        When you are finished, select the Next button.\nYou can access this menu at any time by using
+         the Menu button after completing the initial setup.\n\n</string>
+    <string name="ft_txname">Tax Name</string>
+    <string name="list_remove">Remove this item from list?</string>
+    <string name="menu">Menu</string>
+    <string name="next">Next</string>
+    <string name="okay">OK</string>
+    <string name="pe_create">Create New Product</string>
+    <string name="pe_email">Email Price List</string>
+    <string name="pe_null">No products created.</string>
+    <string name="pe_price">Price</string>
+    <string name="pe_product">Product Name</string>
+    <string name="pe_save">Save Changes and Exit</string>
+    <string name="pe_units">Special units (i.e. \'sq. ft\' or \'in\' - no quotes)</string>
+    <string name="pl_add">Add..</string>
+    <string name="pl_amount">Quantity</string>
+    <string name="pl_comments">Comments</string>
+    <string name="pl_null">No products added.</string>
+    <string name="pl_preview">Preview</string>
+    <string name="pl_title">Step 2:\nInvoice Creator</string>
+    <string name="pl_type">Product Type</string>
+    <string name="pv_body">Please find the invoice for the customer attached to this email.\n\nGREETING\n</string>
+    <string name="pv_subject">Invoice # for customer</string>
+    <string name="pv_title">Step 3:\nPreview Invoice</string>
+    <string name="send">Send</string>
+    <string name="submit">Submit</string>
+    <string name="tst_ecmpn">Please enter your company\'s name and/or address.</string>
+    <string name="tst_elio">IOException on logo change.</string>
+    <string name="tst_eprod">Please add a product first.</string>
+    <string name="tst_nlogr">Logo reset to default.</string>
+    <string name="tst_nlogs">Logo changed successfully.</string>
+    <string name="tst_wrndb">Error: Directory could not be created. Work will not be saved.</string>
+    <string name="tst_wrnpng">NOTE: Custom logo/business card must be stored in PNG format on your device.\nApp might fail otherwise.</string>
+    <string name="viewer_create">Create New Invoice</string>
+    <string name="viewer_number">View Invoice Number:</string>
+    <!-- From: file:/C:/Users/David/SkyDrive/Android%20Studio%20Projects/Invoicer/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="bb10theme"/>
+    <style name="bb10theme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:editTextStyle">@style/bbui_et</item>
+        <item name="android:autoCompleteTextViewStyle">@style/bbui_act</item>
+        <item name="android:buttonStyle">@style/bbui_bt</item>
+        <item name="android:spinnerStyle">@style/bbui_sp </item>
+        <item name="android:windowBackground">@color/bbui_bg</item>
+		<item name="android:listViewStyle">@style/bbui_lvs</item>
+    </style>
+    <style name="bbui_act" parent="@android:style/Widget.AutoCompleteTextView">
+        <item name="android:background">@drawable/bbui_etsl</item>
+    </style>
+    <style name="bbui_bt" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/bbui_btsl</item>
+        <item name="android:textColor">@color/bbui_bt</item>
+    </style>
+    <style name="bbui_et" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/bbui_etsl</item>
+    </style>
+    <style name="bbui_lvs" parent="@android:style/Widget.ListView">
+    	<item name="android:divider">@color/bbui_dv</item>
+    	<item name="android:dividerHeight">3dp</item>
+    </style>
+    <style name="bbui_sp" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@drawable/bbui_spsl</item>
+        <item name="android:textColor">@color/bbui_bt</item>
+    </style>
+    <style name="cwrap24" parent="wrap24">
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="fill18">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="fill24">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="fillw24" parent="fill24">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wrap18">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="wrap24">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+</resources>

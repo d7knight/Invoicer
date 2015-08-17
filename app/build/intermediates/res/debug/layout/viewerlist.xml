@@ -2,8 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
-
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.d7knight.invoicer.activities.ViewList">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
     <Button
         style="@style/fillw24"
         android:onClick="create"

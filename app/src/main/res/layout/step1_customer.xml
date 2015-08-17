@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
-	
+    android:orientation="vertical"
+    tools:context="org.d7knight.invoicer.activities.Step1"
+    >
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
     <ScrollView
         android:layout_above="@+id/ci_bottombar"
         android:layout_width="fill_parent"
@@ -18,19 +25,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:shadowColor="#000000"
-                android:shadowDx="5"
-                android:shadowDy="5"
-                android:shadowRadius="5"
-                android:text="@string/app_name"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp"
-                android:textStyle="bold" >
-            </TextView>
+
 
             <View
                 android:layout_width="fill_parent"
@@ -78,7 +73,7 @@
                 android:singleLine="true" >
             </AutoCompleteTextView>
         </LinearLayout>
-		
+
     </ScrollView>
 
     <RelativeLayout
@@ -111,4 +106,4 @@
             android:text="@string/next" >
         </Button>
     </RelativeLayout>
-</RelativeLayout><!-- From: file:/C:/Users/David/StudioProjects/Invoicer/app/src/main/res/layout/customer.xml -->
+</RelativeLayout>

@@ -14,10 +14,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.webkit.WebView;
 
-public class ViewHTM extends Activity {
+public class ViewHTM extends AppCompatActivity {
 
 	static Context appContext;
 	String invoiceNumber;
@@ -33,6 +36,9 @@ public class ViewHTM extends Activity {
 		super.onCreate(icicle);
 		appContext = this;
 		setContentView(R.layout.viewerhtml);
+		// Set a toolbar to replace the action bar.
+		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+		setSupportActionBar(toolbar);
 
 		invoiceNumber = this.getIntent().getStringExtra("HTML");
 		String file = "Error loading invoice.";

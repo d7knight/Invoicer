@@ -12,13 +12,16 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckedTextView;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class FirstTime extends Activity {
+public class FirstTime extends AppCompatActivity {
 	private String[] sValues = {"","","0","Tax","bool","$","bool","Invoice","0"};
 	private CheckedTextView[] checks = new CheckedTextView[2];
 	private EditText[] fields = new EditText[sValues.length-checks.length];
@@ -86,6 +89,9 @@ public class FirstTime extends Activity {
 	public void onCreate(Bundle b) {
 		super.onCreate(b);
 		setContentView(R.layout.startup);
+		// Set a toolbar to replace the action bar.
+		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+		setSupportActionBar(toolbar);
 		
 		fields[0]= (EditText) this.findViewById(R.id.ft_cmp_name);
 		fields[1]= (EditText) this.findViewById(R.id.ft_greeting);

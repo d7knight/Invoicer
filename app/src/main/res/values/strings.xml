@@ -61,4 +61,6 @@
 	<string name="tst_elio">IOException on logo change.</string>
 	<string name="tst_ecmpn">Please enter your company\'s name and/or address.</string>
 	<string name="tst_eprod">Please add a product first.</string>
+
+    <string name="hello_world">Hello</string>
 </resources>

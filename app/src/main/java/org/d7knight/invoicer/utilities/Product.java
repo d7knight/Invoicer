@@ -42,7 +42,7 @@ public class Product implements Serializable{
     }
 	
 	@Override
-	public boolean equals(Object o){//for preview
+	public boolean equals(Object o){//for step3_preview
 		return this.type.equals(((Product)o).type);
 	}
 	@Override

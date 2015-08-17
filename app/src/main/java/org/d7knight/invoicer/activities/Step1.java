@@ -1,9 +1,10 @@
 package org.d7knight.invoicer.activities;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -24,7 +25,7 @@ import java.util.ArrayList;
 
 import org.d7knight.invoicer.utilities.Utilities;
 
-public class Step1 extends Activity {
+public class Step1 extends AppCompatActivity {
 	private Context appContext;
 	private AutoCompleteTextView[] customerDetails;
 	@SuppressWarnings("unchecked")
@@ -38,7 +39,11 @@ public class Step1 extends Activity {
 	@Override
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
-		setContentView(R.layout.customer);
+		setContentView(R.layout.step1_customer);
+        // Set a toolbar to replace the action bar.
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
 		appContext = this;
 		File f = new File(Utilities.basePath);
 		if (!f.exists()) {
@@ -61,6 +66,7 @@ public class Step1 extends Activity {
 		} catch (Exception e) {
 			Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
 		}
+
 	}
 
 	@Override

@@ -15,19 +15,20 @@ import java.util.Date;
 import org.d7knight.invoicer.utilities.Product;
 import org.d7knight.invoicer.utilities.Utilities;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Toast;
 
-public class Step3 extends Activity {
+public class Step3 extends AppCompatActivity {
 	private static String invoiceTemplate;
 	private static String eol = System.getProperty("line.separator");
 	private static Context appContext;
@@ -37,7 +38,10 @@ public class Step3 extends Activity {
 	public void onCreate(Bundle b) {
 		super.onCreate(b);
 		appContext = this;
-		setContentView(R.layout.preview);
+		setContentView(R.layout.step3_preview);
+		// Set a toolbar to replace the action bar.
+		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+		setSupportActionBar(toolbar);
 		WebView wv = (WebView) findViewById(R.id.pv_wv);
 		wv.getSettings().setBuiltInZoomControls(true);
 		wv.getSettings().setUseWideViewPort(true);
@@ -290,9 +294,9 @@ public class Step3 extends Activity {
 
 			if (!associatedInfo.equals("")) {
 				subject += associatedInfo;
-				body = body.replace("the customer", associatedInfo);
+				body = body.replace("the step1_customer", associatedInfo);
 			} else {
-				subject += "customer";
+				subject += "step1_customer";
 			}
 			body += "\n" + Utilities.userInfo[0];
 

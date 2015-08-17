@@ -9,7 +9,6 @@ package org.d7knight.invoicer.activities;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -24,7 +23,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -39,7 +37,7 @@ import org.d7knight.invoicer.utilities.Product;
 import org.d7knight.invoicer.utilities.Utilities;
 
 public class Step2 extends InvActivity {
-	// private TextView preview;
+	// private TextView step3_preview;
 	private WebView preview;
 	private String previewHTML;
 	// DIALOG
@@ -48,12 +46,12 @@ public class Step2 extends InvActivity {
 	private NumberPicker numpick;
 	private EditText comments;
 	private Button submit, cancel;
-	// preview
+	// step3_preview
 	private ArrayList<Product> pTypeList;
 
 	@Override
 	public void init() {
-		setContentView(R.layout.pl_list);
+		setContentView(R.layout.step2_pl_list);
 		this.preview = (WebView) findViewById(R.id.pl_preview);
 		this.preview.setVerticalFadingEdgeEnabled(false);
 		pTypeList = Utilities.getPriceList(this);

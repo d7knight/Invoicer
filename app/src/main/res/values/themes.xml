@@ -1,6 +1,15 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="AppTheme" parent="AppTheme.Base"/>
 
-    <style name="AppTheme" parent="android:Theme.Holo.Light" />
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+
  <style name="fill18">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>

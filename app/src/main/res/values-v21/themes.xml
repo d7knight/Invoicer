@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <style name="AppTheme" parent="AppTheme.Base">
+            <item name="android:windowContentTransitions">true</item>
+            <item name="android:windowAllowEnterTransitionOverlap">true</item>
+            <item name="android:windowAllowReturnTransitionOverlap">true</item>
+            <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+            <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+        </style>
+
+
+ <style name="fill18">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="fill24">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="wrap24">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="wrap18">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="cwrap24" parent="wrap24">
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="fillw24" parent="fill24">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

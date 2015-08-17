@@ -5,12 +5,10 @@
         When you are finished, select the Next button.\nYou can access this menu at any time by using
          the Menu button after completing the initial setup.\n\n</string><string name="pl_add">Add..</string><string name="ft_currency">Currency Symbol</string><string name="pe_null">No products created.</string><string name="ft_invname">Invoice Title</string><string name="ft_tax">Tax percentage</string><string name="pe_email">Email Price List</string><string name="menu">Menu</string><string name="pl_type">Product Type</string><string name="pe_save">Save Changes and Exit</string><string name="ft_more">More Options</string><string name="tst_wrnpng">NOTE: Custom logo/business card must be stored in PNG format on your device.\nApp might fail otherwise.</string><string name="next">Next</string><string name="ft_txname">Tax Name</string><string name="app_name">Invoicer</string><string name="pv_title">Step 3:\nPreview Invoice</string><string name="back">Back</string><string name="pv_body">Please find the invoice for the customer attached to this email.\n\nGREETING\n</string><string name="pe_create">Create New Product</string><string name="tst_wrndb">Error: Directory could not be created. Work will not be saved.</string><string name="pl_title">Step 2:\nInvoice Creator</string><string name="tst_eprod">Please add a product first.</string><string name="pe_product">Product Name</string><string name="list_remove">Remove this item from list?</string><string name="ft_nologo">Use Company Logo</string><string name="ft_currpos">Currency Symbol is a Prefix</string><string name="tst_ecmpn">Please enter your company\'s name and/or address.</string><string name="viewer_number">View Invoice Number:</string><string name="ft_invnum">Invoice ID Offset (ID = offset + Invoice Number)</string></file><file path="C:\Users\David\StudioProjects\Invoicer\app\src\main\res\values\styles.xml" qualifiers=""><style name="cwrap24" parent="wrap24">
         <item name="android:layout_gravity">center_horizontal</item>
-    </style><style name="fill24">
+    </style><style name="AppTheme" parent="android:Theme.Holo.Light"/><style name="fill24">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:textSize">24sp</item>
-    </style><color name="bbui_bt">#FFFFFF</color><color name="bbui_dv">#242424</color><style name="bbui_act" parent="@android:style/Widget.AutoCompleteTextView">
-        <item name="android:background">@drawable/bbui_etsl</item>
     </style><style name="wrap18">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -21,26 +19,8 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">24sp</item>
-    </style><style name="bbui_sp" parent="@android:style/Widget.Spinner">
-        <item name="android:background">@drawable/bbui_spsl</item>
-        <item name="android:textColor">@color/bbui_bt</item>
     </style><style name="fill18">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:textSize">18sp</item>
-    </style><color name="bbui_bg">#262626</color><style name="bbui_lvs" parent="@android:style/Widget.ListView">
-    	<item name="android:divider">@color/bbui_dv</item>
-    	<item name="android:dividerHeight">3dp</item>
-    </style><style name="AppTheme" parent="android:Theme.Holo.Light"/><style name="bb10theme" parent="@android:style/Theme.Black.NoTitleBar">
-        <item name="android:editTextStyle">@style/bbui_et</item>
-        <item name="android:autoCompleteTextViewStyle">@style/bbui_act</item>
-        <item name="android:buttonStyle">@style/bbui_bt</item>
-        <item name="android:spinnerStyle">@style/bbui_sp </item>
-        <item name="android:windowBackground">@color/bbui_bg</item>
-		<item name="android:listViewStyle">@style/bbui_lvs</item>
-    </style><style name="bbui_et" parent="@android:style/Widget.EditText">
-        <item name="android:background">@drawable/bbui_etsl</item>
-    </style><style name="bbui_bt" parent="@android:style/Widget.Button">
-        <item name="android:background">@drawable/bbui_btsl</item>
-        <item name="android:textColor">@color/bbui_bt</item>
     </style></file></source><source path="C:\Users\David\StudioProjects\Invoicer\app\build\generated\res\rs\debug"/><source path="C:\Users\David\StudioProjects\Invoicer\app\build\generated\res\generated\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\David\StudioProjects\Invoicer\app\src\debug\res"/></dataSet><mergedItems/></merger>

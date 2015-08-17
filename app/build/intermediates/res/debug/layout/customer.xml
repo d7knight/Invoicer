@@ -100,7 +100,6 @@
             android:layout_alignBottom="@+id/ci_next"
             android:layout_toLeftOf="@+id/ci_next"
             android:layout_toRightOf="@+id/ci_menu"
-            android:background="@color/bbui_bg"
             android:gravity="center"
             android:text="@string/ci_title" />
 

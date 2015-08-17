@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/David/StudioProjects/Invoicer/app/src/main/res/values/styles.xml -->
-    <eat-comment/>
-    <color name="bbui_bg">#262626</color>
-    <color name="bbui_bt">#FFFFFF</color>
-    <color name="bbui_dv">#242424</color>
     <!-- From: file:/C:/Users/David/StudioProjects/Invoicer/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">Invoicer</string>
@@ -68,32 +63,6 @@
     <!-- From: file:/C:/Users/David/StudioProjects/Invoicer/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="android:Theme.Holo.Light"/>
-    <style name="bb10theme" parent="@android:style/Theme.Black.NoTitleBar">
-        <item name="android:editTextStyle">@style/bbui_et</item>
-        <item name="android:autoCompleteTextViewStyle">@style/bbui_act</item>
-        <item name="android:buttonStyle">@style/bbui_bt</item>
-        <item name="android:spinnerStyle">@style/bbui_sp </item>
-        <item name="android:windowBackground">@color/bbui_bg</item>
-		<item name="android:listViewStyle">@style/bbui_lvs</item>
-    </style>
-    <style name="bbui_act" parent="@android:style/Widget.AutoCompleteTextView">
-        <item name="android:background">@drawable/bbui_etsl</item>
-    </style>
-    <style name="bbui_bt" parent="@android:style/Widget.Button">
-        <item name="android:background">@drawable/bbui_btsl</item>
-        <item name="android:textColor">@color/bbui_bt</item>
-    </style>
-    <style name="bbui_et" parent="@android:style/Widget.EditText">
-        <item name="android:background">@drawable/bbui_etsl</item>
-    </style>
-    <style name="bbui_lvs" parent="@android:style/Widget.ListView">
-    	<item name="android:divider">@color/bbui_dv</item>
-    	<item name="android:dividerHeight">3dp</item>
-    </style>
-    <style name="bbui_sp" parent="@android:style/Widget.Spinner">
-        <item name="android:background">@drawable/bbui_spsl</item>
-        <item name="android:textColor">@color/bbui_bt</item>
-    </style>
     <style name="cwrap24" parent="wrap24">
         <item name="android:layout_gravity">center_horizontal</item>
     </style>

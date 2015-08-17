@@ -9,21 +9,21 @@ import java.nio.charset.Charset;
 
 import org.d7knight.invoicer.utilities.Utilities;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.webkit.WebView;
 
-public class ViewHTM extends AppCompatActivity {
+public class ViewerHtml extends AppCompatActivity {
 
 	static Context appContext;
 	String invoiceNumber;
+	private DrawerLayout drawer;
 
 
     public void create(View v){
@@ -35,7 +35,7 @@ public class ViewHTM extends AppCompatActivity {
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
 		appContext = this;
-		setContentView(R.layout.viewerhtml);
+		setContentView(R.layout.viewer_html_activity);
 		// Set a toolbar to replace the action bar.
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 		setSupportActionBar(toolbar);

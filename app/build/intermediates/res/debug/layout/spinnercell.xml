@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-	android:layout_height="wrap_content" android:textSize="25sp"
-	xmlns:tools="http://schemas.android.com/tools"
-	tools:context="org.d7knight.invoicer.activities.Step2"
-	 >
-</TextView>
-<!-- From: file:/C:/Users/David/StudioProjects/Invoicer/app/src/main/res/layout/spinnercell.xml -->

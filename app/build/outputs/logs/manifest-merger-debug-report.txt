@@ -69,7 +69,7 @@ ADDED from AndroidManifest.xml:31:9
 		ADDED from AndroidManifest.xml:33:13
 	android:name
 		ADDED from AndroidManifest.xml:32:13
-activity#org.d7knight.invoicer.activities.ViewHTM
+activity#org.d7knight.invoicer.activities.ViewerHtml
 ADDED from AndroidManifest.xml:36:9
 	android:label
 		ADDED from AndroidManifest.xml:39:13

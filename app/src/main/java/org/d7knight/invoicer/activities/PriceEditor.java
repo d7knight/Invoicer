@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.Iterator;
 
-import org.d7knight.invoicer.utilities.InvActivity;
+import org.d7knight.invoicer.utilities.BaseActivity;
 import org.d7knight.invoicer.utilities.Product;
 import org.d7knight.invoicer.utilities.Utilities;
 
@@ -16,8 +16,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class PriceEditor extends InvActivity {
-
+public class PriceEditor extends BaseActivity {
+	@Override
+	protected int getLayoutResource() {
+		return R.layout.price_editor_activity;
+	}
 	@Override
 	public void onPause() {
 		super.onPause();
@@ -55,7 +58,7 @@ public class PriceEditor extends InvActivity {
 	@Override
 	public void init() {
 		this.productList = Utilities.getPriceList(this);
-		setContentView(R.layout.pe_list);
+
 		initDialog();
 	}
 
@@ -94,7 +97,7 @@ public class PriceEditor extends InvActivity {
 	private Button submit, cancel;
 
 	public void initDialog() {
-		ViewGroup root = (ViewGroup) inflater.inflate(R.layout.pe_dialog, null);
+		ViewGroup root = (ViewGroup) inflater.inflate(R.layout.price_editor_dialog, null);
 		ViewGroup dialog = (ViewGroup) root.getChildAt(0);
 		ViewGroup rLay = (ViewGroup) dialog.getChildAt(6);
 		name = (EditText) dialog.getChildAt(1);

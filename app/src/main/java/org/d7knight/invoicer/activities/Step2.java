@@ -10,9 +10,6 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
@@ -31,13 +28,13 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import org.d7knight.invoicer.utilities.InvActivity;
+import org.d7knight.invoicer.utilities.BaseActivity;
 import org.d7knight.invoicer.utilities.NumberPicker;
 import org.d7knight.invoicer.utilities.Product;
 import org.d7knight.invoicer.utilities.Utilities;
 
-public class Step2 extends InvActivity {
-	// private TextView step3_preview;
+public class Step2 extends BaseActivity {
+	// private TextView step3_activity;
 	private WebView preview;
 	private String previewHTML;
 	// DIALOG
@@ -46,13 +43,17 @@ public class Step2 extends InvActivity {
 	private NumberPicker numpick;
 	private EditText comments;
 	private Button submit, cancel;
-	// step3_preview
+	// step3_activity
 	private ArrayList<Product> pTypeList;
 
 	@Override
+	protected int getLayoutResource() {
+		return R.layout.step2_activity;
+	}
+	@Override
 	public void init() {
-		setContentView(R.layout.step2_pl_list);
-		this.preview = (WebView) findViewById(R.id.pl_preview);
+
+		preview=(WebView)findViewById(R.id.pl_preview);
 		this.preview.setVerticalFadingEdgeEnabled(false);
 		pTypeList = Utilities.getPriceList(this);
 		initDialog();
@@ -64,13 +65,13 @@ public class Step2 extends InvActivity {
 		super.onConfigurationChanged(c);
 		
 		ViewTreeObserver vto = submit.getViewTreeObserver(); 
-		vto.addOnGlobalLayoutListener(new OnGlobalLayoutListener() { 
+		vto.addOnGlobalLayoutListener(new OnGlobalLayoutListener() {
 
 			@Override
-			public void onGlobalLayout() { 
-		        submit.getViewTreeObserver().removeGlobalOnLayoutListener(this); 
+			public void onGlobalLayout() {
+				submit.getViewTreeObserver().removeGlobalOnLayoutListener(this);
 				scroot.scrollTo(submit.getRight(), submit.getBottom());
-		    } 
+			}
 		});
 	}
 	
@@ -111,7 +112,7 @@ public class Step2 extends InvActivity {
 		@SuppressWarnings("unchecked")
 		ArrayList<String> spinnerList = (ArrayList<String>) Utilities.nList.clone(); 
 		Collections.sort(spinnerList);
-		spinner_adapter = new ArrayAdapter<String>(this, R.layout.spinnercell,
+		spinner_adapter = new ArrayAdapter<String>(this, R.layout.price_spinner_cell,
 				spinnerList);
 		type.setAdapter(spinner_adapter);
 	}
@@ -119,7 +120,7 @@ public class Step2 extends InvActivity {
 
 	public void initDialog() {
 
-		scroot = (ScrollView) inflater.inflate(R.layout.pl_dialog, null);
+		scroot = (ScrollView) inflater.inflate(R.layout.step2_dialog, null);
 		
 		ViewGroup root =  (ViewGroup) ((ViewGroup)scroot).getChildAt(0);
 		ViewGroup dialog = (ViewGroup) root.getChildAt(0);
@@ -234,28 +235,7 @@ public class Step2 extends InvActivity {
 		startActivity(myIntent);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.menu, menu);
-		return true;
-	}
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case R.id.editpricelist:
-			editPrices();
-			break;
-		case R.id.viewpastivcs:
-			viewOld();
-			break;
-		case R.id.changecmpinfo:
-			askForInfo();
-			break;
-		}
-		return true;
-	}
 
 	public void menu(View v){
 		this.openOptionsMenu();

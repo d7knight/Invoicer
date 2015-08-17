@@ -34,7 +34,7 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="org.d7knight.invoicer.activities.ViewHTM"
+            android:name=".ViewerHtml"
             android:configChanges="orientation"
             android:label="@string/app_name" >
         </activity>

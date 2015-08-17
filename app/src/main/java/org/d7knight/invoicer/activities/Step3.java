@@ -21,9 +21,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Toast;
@@ -33,15 +36,60 @@ public class Step3 extends AppCompatActivity {
 	private static String eol = System.getProperty("line.separator");
 	private static Context appContext;
 	private static String receipt;
+	private DrawerLayout drawer;
+	private Toolbar toolbar;
+
+	//MENU
+	public void viewOld() {
+		Intent myIntent = new Intent(this, ViewList.class);
+		startActivity(myIntent);
+	}
+
+	public void editPrices() {
+		Intent myIntent = new Intent(this, PriceEditor.class);
+		startActivity(myIntent);
+	}
+
+	public void askForInfo() {
+		Intent myIntent = new Intent(this, FirstTime.class);
+		startActivity(myIntent);
+	}
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+			case android.R.id.home:
+				drawer.openDrawer(GravityCompat.START);
+				break;
+			case R.id.editpricelist:
+				editPrices();
+				break;
+			case R.id.viewpastivcs:
+				viewOld();
+				break;
+			case R.id.changecmpinfo:
+				askForInfo();
+				break;
+		}
+		return true;
+	}
 
 	@Override
 	public void onCreate(Bundle b) {
 		super.onCreate(b);
 		appContext = this;
-		setContentView(R.layout.step3_preview);
+		setContentView(R.layout.step3_activity);
 		// Set a toolbar to replace the action bar.
-		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-		setSupportActionBar(toolbar);
+		toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+		if (toolbar != null) {
+			setSupportActionBar(toolbar);
+			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+			toolbar.setNavigationIcon(R.drawable.ic_ab_drawer);
+			drawer = (DrawerLayout) findViewById(R.id.drawer);
+			drawer.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
+			Log.e("STEP3", " Setup toolbar Successfully");
+		}
+		else Log.e("STEP3", " Failure to Setup toolbar");
 		WebView wv = (WebView) findViewById(R.id.pv_wv);
 		wv.getSettings().setBuiltInZoomControls(true);
 		wv.getSettings().setUseWideViewPort(true);
@@ -294,9 +342,9 @@ public class Step3 extends AppCompatActivity {
 
 			if (!associatedInfo.equals("")) {
 				subject += associatedInfo;
-				body = body.replace("the step1_customer", associatedInfo);
+				body = body.replace("the step1_activity", associatedInfo);
 			} else {
-				subject += "step1_customer";
+				subject += "step1_activity";
 			}
 			body += "\n" + Utilities.userInfo[0];
 

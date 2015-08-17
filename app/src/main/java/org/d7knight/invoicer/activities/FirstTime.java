@@ -12,7 +12,6 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -88,7 +87,7 @@ public class FirstTime extends AppCompatActivity {
 	@Override
 	public void onCreate(Bundle b) {
 		super.onCreate(b);
-		setContentView(R.layout.startup);
+		setContentView(R.layout.first_time_activity);
 		// Set a toolbar to replace the action bar.
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 		setSupportActionBar(toolbar);

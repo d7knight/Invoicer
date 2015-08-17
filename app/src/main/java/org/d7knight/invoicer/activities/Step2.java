@@ -114,15 +114,7 @@ public class Step2 extends InvActivity {
 		ArrayList<String> spinnerList = (ArrayList<String>) Utilities.nList.clone(); 
 		Collections.sort(spinnerList);
 		spinner_adapter = new ArrayAdapter<String>(this, R.layout.spinnercell,
-				spinnerList) {
-			@Override
-			public View getDropDownView(int p, View v, ViewGroup vg) {
-				TextView convertView = (TextView) super.getDropDownView(p, v,
-						vg);
-				convertView.setTextColor(Color.BLACK);
-				return (View) convertView;
-			}
-		};
+				spinnerList);
 		type.setAdapter(spinner_adapter);
 	}
 	ScrollView scroot;

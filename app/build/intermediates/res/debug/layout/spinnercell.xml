@@ -2,6 +2,6 @@
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
 	android:layout_height="wrap_content" android:textSize="25sp"
-	android:textColor="#FFFFFFFF" >
+	 >
 </TextView>
 <!-- From: file:/C:/Users/David/StudioProjects/Invoicer/app/src/main/res/layout/spinnercell.xml -->

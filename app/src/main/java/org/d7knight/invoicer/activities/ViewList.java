@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.mangelok.invoicer.activities;
+package org.d7knight.invoicer.activities;
 
 import android.app.ListActivity;
 import android.content.Context;
@@ -16,7 +16,7 @@ import android.widget.ListView;
 import java.io.File;
 import java.util.ArrayList;
 
-import org.mangelok.invoicer.utilities.Utilities;
+import org.d7knight.invoicer.utilities.Utilities;
 
 /**
  *

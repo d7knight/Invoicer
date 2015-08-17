@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.mangelok.invoicer.activities.test">
+    package="org.d7knight.invoicer.activities.test">
 
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8" />
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="11" />
 
     <application>
         <uses-library android:name="android.test.runner" />
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="org.mangelok.invoicer.activities"
+                     android:targetPackage="org.d7knight.invoicer.activities"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for org.mangelok.invoicer.activities"/>
+                     android:label="Tests for org.d7knight.invoicer.activities"/>
 </manifest>

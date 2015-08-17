@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package org.mangelok.invoicer.activities;
+package org.d7knight.invoicer.activities;
 
 public final class R {
     public static final class attr {

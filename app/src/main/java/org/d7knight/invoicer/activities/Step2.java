@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 //TODO: Make all dialogs STATIC/FINAL.
-package org.mangelok.invoicer.activities;
+package org.d7knight.invoicer.activities;
 
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -33,10 +33,10 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import org.mangelok.invoicer.utilities.InvActivity;
-import org.mangelok.invoicer.utilities.NumberPicker;
-import org.mangelok.invoicer.utilities.Product;
-import org.mangelok.invoicer.utilities.Utilities;
+import org.d7knight.invoicer.utilities.InvActivity;
+import org.d7knight.invoicer.utilities.NumberPicker;
+import org.d7knight.invoicer.utilities.Product;
+import org.d7knight.invoicer.utilities.Utilities;
 
 public class Step2 extends InvActivity {
 	// private TextView preview;

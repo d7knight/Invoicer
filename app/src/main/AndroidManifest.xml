@@ -1,11 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.mangelok.invoicer.activities"
+    package="org.d7knight.invoicer.activities"
     android:versionCode="5"
     android:versionName="1.4" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="8" />
+        android:minSdkVersion="11"
+        android:targetSdkVersion="11" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
     </uses-permission>
@@ -15,36 +15,36 @@
         android:label="@string/app_name" 
         android:theme="@style/AppTheme">
         <activity
-            android:name=".FirstTime"
+            android:name="org.d7knight.invoicer.activities.FirstTime"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".Step3"
+            android:name="org.d7knight.invoicer.activities.Step3"
             android:configChanges="orientation"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".PriceEditor"
+            android:name="org.d7knight.invoicer.activities.PriceEditor"
             android:configChanges="orientation"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".Step2"
+            android:name="org.d7knight.invoicer.activities.Step2"
             android:configChanges="orientation"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".ViewHTM"
+            android:name="org.d7knight.invoicer.activities.ViewHTM"
             android:configChanges="orientation"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".ViewList"
+            android:name="org.d7knight.invoicer.activities.ViewList"
             android:configChanges="orientation"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".Step1"
+            android:name="org.d7knight.invoicer.activities.Step1"
             android:configChanges="orientation"
             android:label="@string/app_name" >
             <intent-filter>

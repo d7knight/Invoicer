@@ -1,12 +1,12 @@
-package org.mangelok.invoicer.activities;
+package org.d7knight.invoicer.activities;
 
 import java.io.IOException;
 import java.util.Date;
 import java.util.Iterator;
 
-import org.mangelok.invoicer.utilities.InvActivity;
-import org.mangelok.invoicer.utilities.Product;
-import org.mangelok.invoicer.utilities.Utilities;
+import org.d7knight.invoicer.utilities.InvActivity;
+import org.d7knight.invoicer.utilities.Product;
+import org.d7knight.invoicer.utilities.Utilities;
 
 import android.app.AlertDialog;
 import android.content.Intent;

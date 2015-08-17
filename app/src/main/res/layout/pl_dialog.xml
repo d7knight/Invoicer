@@ -22,9 +22,9 @@
                 android:text="@string/pl_amount" >
             </TextView>
 
-            <org.mangelok.invoicer.utilities.NumberPicker
+            <org.d7knight.invoicer.utilities.NumberPicker
                 style="@style/wrap24" >
-            </org.mangelok.invoicer.utilities.NumberPicker>
+            </org.d7knight.invoicer.utilities.NumberPicker>
 
             <TextView
                 style="@style/fill18"

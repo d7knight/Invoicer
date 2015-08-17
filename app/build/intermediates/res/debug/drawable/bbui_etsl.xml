@@ -8,4 +8,4 @@
     <item android:drawable="@drawable/bbui_etn" android:state_enabled="true"/>
     <item android:drawable="@drawable/bbui_etn" android:state_focused="true"/>
 
-</selector><!-- From: file:/C:/Users/David/SkyDrive/Android%20Studio%20Projects/Invoicer/app/src/main/res/drawable/bbui_etsl.xml -->
+</selector><!-- From: file:/C:/Users/David/StudioProjects/Invoicer/app/src/main/res/drawable/bbui_etsl.xml -->

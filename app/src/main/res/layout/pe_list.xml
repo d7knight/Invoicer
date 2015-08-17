@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    tools:context="org.mangelok.siminvpro.activities.ProductList" >
+    tools:context="org.d7knight.siminvpro.activities.ProductList" >
 
     <ListView
         android:layout_alignParentTop="true"

@@ -1,10 +1,8 @@
-package org.mangelok.invoicer.activities;
+package org.d7knight.invoicer.activities;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -13,10 +11,9 @@ import java.net.URLEncoder;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Scanner;
 
-import org.mangelok.invoicer.utilities.Product;
-import org.mangelok.invoicer.utilities.Utilities;
+import org.d7knight.invoicer.utilities.Product;
+import org.d7knight.invoicer.utilities.Utilities;
 
 import android.app.Activity;
 import android.app.AlertDialog;

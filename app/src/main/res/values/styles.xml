@@ -1,6 +1,6 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="AppTheme" parent="bb10theme" />
+    <style name="AppTheme" parent="android:Theme.Holo.Light" />
 
     <style name="bb10theme" parent="@android:style/Theme.Black.NoTitleBar">
         <item name="android:editTextStyle">@style/bbui_et</item>

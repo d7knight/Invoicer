@@ -1,7 +1,7 @@
-package org.mangelok.invoicer.utilities;
+package org.d7knight.invoicer.utilities;
 
 import java.util.ArrayList;
-import org.mangelok.invoicer.activities.R;
+import org.d7knight.invoicer.activities.R;
 
 
 import android.os.Bundle;

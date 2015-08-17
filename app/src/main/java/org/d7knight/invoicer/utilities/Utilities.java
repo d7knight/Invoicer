@@ -1,4 +1,4 @@
-package org.mangelok.invoicer.utilities;
+package org.d7knight.invoicer.utilities;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -1,4 +1,4 @@
-package org.mangelok.invoicer.activities;
+package org.d7knight.invoicer.activities;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -7,7 +7,7 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 
-import org.mangelok.invoicer.utilities.Utilities;
+import org.d7knight.invoicer.utilities.Utilities;
 
 import android.app.Activity;
 import android.content.Context;

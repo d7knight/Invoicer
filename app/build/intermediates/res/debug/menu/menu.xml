@@ -5,4 +5,4 @@
         android:title="View Past Invoices" android:enabled="true" android:visible="true" android:menuCategory="container"/>
      <item android:id="@+id/changecmpinfo"
         android:title="Change Company Info" android:enabled="true" android:visible="true" android:menuCategory="container"/>
-</menu><!-- From: file:/C:/Users/David/SkyDrive/Android%20Studio%20Projects/Invoicer/app/src/main/res/menu/menu.xml -->
+</menu><!-- From: file:/C:/Users/David/StudioProjects/Invoicer/app/src/main/res/menu/menu.xml -->

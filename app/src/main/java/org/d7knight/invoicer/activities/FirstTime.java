@@ -1,10 +1,10 @@
-package org.mangelok.invoicer.activities;
+package org.d7knight.invoicer.activities;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.mangelok.invoicer.utilities.Utilities;
+import org.d7knight.invoicer.utilities.Utilities;
 
 import android.app.Activity;
 import android.content.Intent;

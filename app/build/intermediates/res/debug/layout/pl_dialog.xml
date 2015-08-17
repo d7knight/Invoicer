@@ -22,9 +22,9 @@
                 android:text="@string/pl_amount" >
             </TextView>
 
-            <org.mangelok.invoicer.utilities.NumberPicker
+            <org.d7knight.invoicer.utilities.NumberPicker
                 style="@style/wrap24" >
-            </org.mangelok.invoicer.utilities.NumberPicker>
+            </org.d7knight.invoicer.utilities.NumberPicker>
 
             <TextView
                 style="@style/fill18"
@@ -69,4 +69,4 @@
         </RelativeLayout>
     </RelativeLayout>
 
-</ScrollView><!-- From: file:/C:/Users/David/SkyDrive/Android%20Studio%20Projects/Invoicer/app/src/main/res/layout/pl_dialog.xml -->
+</ScrollView><!-- From: file:/C:/Users/David/StudioProjects/Invoicer/app/src/main/res/layout/pl_dialog.xml -->

@@ -1,4 +1,4 @@
-package org.mangelok.invoicer.activities;
+package org.d7knight.invoicer.activities;
 
 import android.app.Activity;
 import android.content.Context;
@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-import org.mangelok.invoicer.utilities.Utilities;
+import org.d7knight.invoicer.utilities.Utilities;
 
 public class Step1 extends Activity {
 	private Context appContext;

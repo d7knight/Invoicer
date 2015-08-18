@@ -12,6 +12,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+import org.d7knight.invoicer.utilities.BaseActivity;
 import org.d7knight.invoicer.utilities.Product;
 import org.d7knight.invoicer.utilities.Utilities;
 
@@ -31,65 +32,22 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.Toast;
 
-public class Step3 extends AppCompatActivity {
+public class Step3 extends BaseActivity {
 	private static String invoiceTemplate;
 	private static String eol = System.getProperty("line.separator");
 	private static Context appContext;
 	private static String receipt;
-	private DrawerLayout drawer;
-	private Toolbar toolbar;
 
-	//MENU
-	public void viewOld() {
-		Intent myIntent = new Intent(this, ManageInvoices.class);
-		startActivity(myIntent);
-	}
-
-	public void editPrices() {
-		Intent myIntent = new Intent(this, ManageProducts.class);
-		startActivity(myIntent);
-	}
-
-	public void askForInfo() {
-		Intent myIntent = new Intent(this, FirstTime.class);
-		startActivity(myIntent);
-	}
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-			case android.R.id.home:
-				drawer.openDrawer(GravityCompat.START);
-				break;
-			case R.id.editpricelist:
-				editPrices();
-				break;
-			case R.id.viewpastivcs:
-				viewOld();
-				break;
-			case R.id.changecmpinfo:
-				askForInfo();
-				break;
-		}
-		return true;
+	protected int getLayoutResource() {
+		return R.layout.step3_activity;
 	}
 
 	@Override
 	public void onCreate(Bundle b) {
 		super.onCreate(b);
 		appContext = this;
-		setContentView(R.layout.step3_activity);
-		// Set a toolbar to replace the action bar.
-		toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-		if (toolbar != null) {
-			setSupportActionBar(toolbar);
-			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-			toolbar.setNavigationIcon(R.drawable.ic_ab_drawer);
-			drawer = (DrawerLayout) findViewById(R.id.drawer);
-			drawer.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
-			Log.e("STEP3", " Setup toolbar Successfully");
-		}
-		else Log.e("STEP3", " Failure to Setup toolbar");
 		WebView wv = (WebView) findViewById(R.id.pv_wv);
 		wv.getSettings().setBuiltInZoomControls(true);
 		wv.getSettings().setUseWideViewPort(true);

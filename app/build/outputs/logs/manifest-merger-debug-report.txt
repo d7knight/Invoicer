@@ -133,3 +133,9 @@ ADDED from AndroidManifest.xml:66:9
 		ADDED from AndroidManifest.xml:68:13
 	android:name
 		ADDED from AndroidManifest.xml:67:13
+activity#org.d7knight.invoicer.utilities.BaseActivity
+ADDED from AndroidManifest.xml:70:9
+	android:label
+		ADDED from AndroidManifest.xml:72:13
+	android:name
+		ADDED from AndroidManifest.xml:71:13

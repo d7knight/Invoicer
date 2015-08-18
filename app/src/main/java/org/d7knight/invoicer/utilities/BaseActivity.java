@@ -31,156 +31,72 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.Configuration;
 
-public abstract class BaseActivity extends AppCompatActivity implements ProductListener {
-	public ArrayList<Product> productList;
-	protected Context appContext;
-	protected LayoutInflater inflater;
-	public ArrayAdapter<Product> adapter;
-	protected AlertDialog userInput;
-	protected ListView lv;
-	private DrawerLayout drawer;
-	private Toolbar toolbar;
-	@Override
-	public void onConfigurationChanged(Configuration c) {
-		super.onConfigurationChanged(c);
-		updateDialogLayout();
-		adapter.notifyDataSetChanged();
-	}
+public abstract class BaseActivity extends AppCompatActivity {
 
-	public void updateDialogLayout() {
-		Display display = getWindowManager().getDefaultDisplay();
-		WindowManager.LayoutParams WMLP = userInput.getWindow().getAttributes();
-		WMLP.y = 10;
-		WMLP.height = display.getHeight() - 20;
-		WMLP.width = display.getWidth();
-		userInput.getWindow().setAttributes(WMLP);
-	}
-	@Override
-	public void onCreate(Bundle icicle) {
-		super.onCreate(icicle);
-		setContentView(this.getLayoutResource());
-		toolbar = (Toolbar) findViewById(R.id.toolbar);
-		if (toolbar != null) {
-			setSupportActionBar(toolbar);
-			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-			toolbar.setNavigationIcon(R.drawable.ic_ab_drawer);
-			drawer = (DrawerLayout) findViewById(R.id.drawer);
-			drawer.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
-		}
-	    appContext = this;
-		productList = new ArrayList<Product>();
-		inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		Product.listener = this;
-		init();
+    private DrawerLayout drawer;
+    private Toolbar toolbar;
 
 
+    @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+        setContentView(this.getLayoutResource());
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        if (toolbar != null) {
+            setSupportActionBar(toolbar);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            toolbar.setNavigationIcon(R.drawable.ic_ab_drawer);
+            drawer = (DrawerLayout) findViewById(R.id.drawer);
+            drawer.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
+        }
 
-		adapter = new ArrayAdapter<Product>(
-				appContext, R.layout.price_cell, this.productList);
-		adapter.setNotifyOnChange(false);
-		lv=new ListView(this);
-		lv.setAdapter(adapter);
-		lv.setTextFilterEnabled(true);
-		lv.setOnItemClickListener(new OnItemClickListener() {
+    }
 
-			public void onItemClick(AdapterView<?> parent, View view,
-					final int position, long id) {
-				Product CurrentProduct = adapter.getItem(position);
-				showProduct(CurrentProduct, true);
+    //MENU
+    public void viewOld() {
+        Intent myIntent = new Intent(this, ManageInvoices.class);
+        startActivity(myIntent);
+    }
 
-			}
-		});
-		lv.setOnItemLongClickListener(new OnItemLongClickListener() {
+    public void editPrices() {
+        Intent myIntent = new Intent(this, ManageProducts.class);
+        startActivity(myIntent);
+    }
 
-			public boolean onItemLongClick(AdapterView<?> arg0, View arg1,
-					final int arg2, long arg3) {
-				AlertDialog.Builder builder = new AlertDialog.Builder(
-						appContext);
-				builder.setCancelable(true).setMessage(R.string.list_remove);
-				final AlertDialog d = builder.create();
+    public void askForInfo() {
+        Intent myIntent = new Intent(this, FirstTime.class);
+        startActivity(myIntent);
+    }
 
-				d.setButton(appContext.getString(R.string.cancel),
-						new AlertDialog.OnClickListener() {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
 
-							public void onClick(DialogInterface arg0, int arg1) {
-								arg0.cancel();
-							}
-						});
-				d.setButton2(appContext.getString(R.string.okay),
-						new AlertDialog.OnClickListener() {
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                drawer.openDrawer(GravityCompat.START);
+                break;
+            case R.id.editpricelist:
+                editPrices();
+                break;
+            case R.id.viewpastivcs:
+                viewOld();
+                break;
+            case R.id.changecmpinfo:
+                askForInfo();
+                break;
+        }
+        return true;
+    }
+    protected abstract int getLayoutResource();
 
-							public void onClick(DialogInterface arg0, int arg1) {
-								adapter.remove(adapter.getItem(arg2));
-								
-								update(d);
-							}
-						});
-
-				d.show();
-				return false;
-			}
-
-		});
-		}
-
-	public void addProduct(View v) {
-		Product p = new Product();
-		this.adapter.add(p);
-		showProduct(p, false);
-	}
-	public void update(AlertDialog d){
-		this.adapter.notifyDataSetChanged();
-		this.adapter.setNotifyOnChange(false);
-		d.cancel();
-	};
-	public abstract void init();
-	public abstract String getProductLabel(Product p);
-	public abstract void showProduct(Product p, boolean isEditing);
-	//MENU
-	public void viewOld() {
-		Intent myIntent = new Intent(this, ManageInvoices.class);
-		startActivity(myIntent);
-	}
-
-	public void editPrices() {
-		Intent myIntent = new Intent(this, ManageProducts.class);
-		startActivity(myIntent);
-	}
-
-	public void askForInfo() {
-		Intent myIntent = new Intent(this, FirstTime.class);
-		startActivity(myIntent);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.menu, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-			case android.R.id.home:
-				drawer.openDrawer(GravityCompat.START);
-				break;
-			case R.id.editpricelist:
-				editPrices();
-				break;
-			case R.id.viewpastivcs:
-				viewOld();
-				break;
-			case R.id.changecmpinfo:
-				askForInfo();
-				break;
-		}
-		return true;
-	}
-	protected abstract int getLayoutResource();
-
-	protected void setActionBarIcon(int iconRes) {
-		toolbar.setNavigationIcon(iconRes);
-	}
+    protected void setActionBarIcon(int iconRes) {
+        toolbar.setNavigationIcon(iconRes);
+    }
 
 }

@@ -67,6 +67,10 @@
             android:name=".ManageContacts"
             android:label="@string/title_activity_manage_contacts" >
         </activity>
+        <activity
+            android:name="org.d7knight.invoicer.utilities.BaseActivity"
+            android:label="@string/title_activity_base" >
+        </activity>
     </application>
 
 </manifest>

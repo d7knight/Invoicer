@@ -367,6 +367,7 @@
     <!-- From: file:/C:/Users/David/StudioProjects/Invoicer/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="submit">Submit</string>
+    <string name="title_activity_base">BaseActivity</string>
     <string name="title_activity_manage_contacts">ManageContacts</string>
     <string name="title_activity_start">StartActivity</string>
     <string name="tst_ecmpn">Please enter your company\'s name and/or address.</string>

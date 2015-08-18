@@ -25,36 +25,30 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+import org.d7knight.invoicer.utilities.BaseActivity;
 import org.d7knight.invoicer.utilities.Utilities;
 
-public class Step1 extends AppCompatActivity {
+public class Step1 extends BaseActivity {
     private Context appContext;
     private AutoCompleteTextView[] customerDetails;
     @SuppressWarnings("unchecked")
     private static ArrayList<String>[] autoFields = new ArrayList[3];
     private final String eol = System.getProperty("line.separator");
     private Bundle resumed;
-    private DrawerLayout drawer;
 
     public void menu(View v) {
         this.openOptionsMenu();
     }
-
+    @Override
+    protected int getLayoutResource() {
+        return R.layout.step1_activity;
+    }
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        setContentView(R.layout.step1_activity);
 
-        // Set a toolbar to replace the action bar.
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            toolbar.setNavigationIcon(R.drawable.ic_ab_drawer);
-            drawer = (DrawerLayout) findViewById(R.id.drawer);
-            drawer.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
-        }
+
 
 
         appContext = this;
@@ -223,47 +217,7 @@ public class Step1 extends AppCompatActivity {
         }
     }
 
-    //MENU
-    public void viewOld() {
-        Intent myIntent = new Intent(this, ManageInvoices.class);
-        startActivity(myIntent);
-    }
 
-    public void editPrices() {
-        Intent myIntent = new Intent(this, ManageProducts.class);
-        startActivity(myIntent);
-    }
-
-    public void askForInfo() {
-        Intent myIntent = new Intent(this, FirstTime.class);
-        startActivity(myIntent);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                drawer.openDrawer(GravityCompat.START);
-                break;
-            case R.id.editpricelist:
-                editPrices();
-                break;
-            case R.id.viewpastivcs:
-                viewOld();
-                break;
-            case R.id.changecmpinfo:
-                askForInfo();
-                break;
-        }
-        return true;
-    }
 
 
 }

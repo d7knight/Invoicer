@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.Iterator;
 
-import org.d7knight.invoicer.utilities.BaseActivity;
+import org.d7knight.invoicer.utilities.BaseListActivity;
 import org.d7knight.invoicer.utilities.Product;
 import org.d7knight.invoicer.utilities.Utilities;
 
@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class ManageProducts extends BaseActivity {
+public class ManageProducts extends BaseListActivity {
 	@Override
 	protected int getLayoutResource() {
 		return R.layout.price_editor_activity;

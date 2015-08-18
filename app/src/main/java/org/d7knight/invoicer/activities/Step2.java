@@ -28,12 +28,12 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import org.d7knight.invoicer.utilities.BaseActivity;
+import org.d7knight.invoicer.utilities.BaseListActivity;
 import org.d7knight.invoicer.utilities.NumberPicker;
 import org.d7knight.invoicer.utilities.Product;
 import org.d7knight.invoicer.utilities.Utilities;
 
-public class Step2 extends BaseActivity {
+public class Step2 extends BaseListActivity {
 	// private TextView step3_activity;
 	private WebView preview;
 	private String previewHTML;

@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class PriceEditor extends BaseActivity {
+public class ManageProducts extends BaseActivity {
 	@Override
 	protected int getLayoutResource() {
 		return R.layout.price_editor_activity;

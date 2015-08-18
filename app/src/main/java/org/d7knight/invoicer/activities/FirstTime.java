@@ -137,7 +137,7 @@ public class FirstTime extends AppCompatActivity {
 
 			File b = new File(Utilities.priceListPath);
 			if (!b.exists()) {
-				Intent myIntent = new Intent(this, PriceEditor.class);
+				Intent myIntent = new Intent(this, ManageProducts.class);
 				startActivity(myIntent);
 			} else {
 				Intent myIntent = new Intent(this, Step1.class);

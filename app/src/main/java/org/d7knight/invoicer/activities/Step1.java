@@ -225,12 +225,12 @@ public class Step1 extends AppCompatActivity {
 
     //MENU
     public void viewOld() {
-        Intent myIntent = new Intent(this, ViewList.class);
+        Intent myIntent = new Intent(this, ManageInvoices.class);
         startActivity(myIntent);
     }
 
     public void editPrices() {
-        Intent myIntent = new Intent(this, PriceEditor.class);
+        Intent myIntent = new Intent(this, ManageProducts.class);
         startActivity(myIntent);
     }
 

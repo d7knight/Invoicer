@@ -3,9 +3,9 @@ package org.d7knight.invoicer.utilities;
 import java.util.ArrayList;
 
 import org.d7knight.invoicer.activities.FirstTime;
-import org.d7knight.invoicer.activities.PriceEditor;
+import org.d7knight.invoicer.activities.ManageProducts;
 import org.d7knight.invoicer.activities.R;
-import org.d7knight.invoicer.activities.ViewList;
+import org.d7knight.invoicer.activities.ManageInvoices;
 
 
 import android.content.Intent;
@@ -138,12 +138,12 @@ public abstract class BaseActivity extends AppCompatActivity implements ProductL
 	public abstract void showProduct(Product p, boolean isEditing);
 	//MENU
 	public void viewOld() {
-		Intent myIntent = new Intent(this, ViewList.class);
+		Intent myIntent = new Intent(this, ManageInvoices.class);
 		startActivity(myIntent);
 	}
 
 	public void editPrices() {
-		Intent myIntent = new Intent(this, PriceEditor.class);
+		Intent myIntent = new Intent(this, ManageProducts.class);
 		startActivity(myIntent);
 	}
 

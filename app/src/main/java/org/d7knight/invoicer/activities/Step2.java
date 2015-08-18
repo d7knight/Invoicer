@@ -222,12 +222,12 @@ public class Step2 extends BaseActivity {
 
 	//MENU
 	public void viewOld() {
-		Intent myIntent = new Intent(this, ViewList.class);
+		Intent myIntent = new Intent(this, ManageInvoices.class);
 		startActivity(myIntent);
 	}
 
 	public void editPrices() {
-		Intent myIntent = new Intent(this, PriceEditor.class);
+		Intent myIntent = new Intent(this, ManageProducts.class);
 		startActivity(myIntent);
 	}
 	public void askForInfo() {

@@ -25,7 +25,7 @@ import org.d7knight.invoicer.utilities.Utilities;
  *
  * @author michael
  */
-public class ViewList extends AppCompatActivity {
+public class ManageInvoices extends AppCompatActivity {
 
     static Context appContext;    
     String[] invoicelist;

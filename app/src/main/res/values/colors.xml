@@ -9,4 +9,8 @@
 
     <color name="windowBackgroundColor">#333333</color>
     <color name="black_translucent">#80000000</color>
+    <color name="ColorPrimary">#FF5722</color>
+    <color name="ColorPrimaryDark">#E64A19</color>
+    <color name="floating_action_button_color">#E64A19</color>
+
 </resources>

@@ -1,5 +1,5 @@
 # Invoicer
-Invoicing App
+
 Invoicer allows you to create invoices on the fly.In order to construct an invoice you first need to create some products or services that you sell. Once you are finished creating an invoice you can send it to your customer or employer with a generated email. The document will be converted to a pdf document before it is sent to ensure it is easy to use and print. From within the app you can print off a copy for yourself of any invoice you create (via a google cloud printer).
 
 Material Design Pattern

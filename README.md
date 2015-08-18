@@ -1,6 +1,6 @@
 # Invoicer
 
-Invoicer allows you to create invoices on the fly.In order to construct an invoice you first need to create some products or services that you sell. Next you can construct an invoice and once you are finished you can send it to your customer or employer with a generated email. The document will be converted to a pdf document before it is sent to ensure it is easy to use and print. From within the app you can print off a copy for yourself of any invoice you create (via a google cloud printer). Another feature of Invoicer is the ability to view or resend previous invoices that you constructed. 
+Invoicer allows you to create invoices on the fly. In order to construct an invoice you first need to create some products or services that you sell. Next you can construct an invoice and once you are finished you can send it to your customer or employer with a generated email. The document will be converted to a pdf document before it is sent to ensure it is easy to use and print. From within the app you can print off a copy for yourself of any invoice you create (via a google cloud printer). Another feature of Invoicer is the ability to view or resend previous invoices that you constructed. 
 
 <strong>Design Choices</strong>
 

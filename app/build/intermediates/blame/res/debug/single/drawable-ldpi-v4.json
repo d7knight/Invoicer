@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\DadWorkspace\\Invoicer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\bbui_btn.9.png",
+        "source": "C:\\DadWorkspace\\Invoicer\\app\\src\\main\\res\\drawable-ldpi\\bbui_btn.9.png"
+    },
+    {
+        "merged": "C:\\DadWorkspace\\Invoicer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\bbui_bts.9.png",
+        "source": "C:\\DadWorkspace\\Invoicer\\app\\src\\main\\res\\drawable-ldpi\\bbui_bts.9.png"
+    },
+    {
+        "merged": "C:\\DadWorkspace\\Invoicer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_launcher.png",
+        "source": "C:\\DadWorkspace\\Invoicer\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\DadWorkspace\\Invoicer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\bbui_spc.9.png",
+        "source": "C:\\DadWorkspace\\Invoicer\\app\\src\\main\\res\\drawable-ldpi\\bbui_spc.9.png"
+    },
+    {
+        "merged": "C:\\DadWorkspace\\Invoicer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\bbui_spe.9.png",
+        "source": "C:\\DadWorkspace\\Invoicer\\app\\src\\main\\res\\drawable-ldpi\\bbui_spe.9.png"
+    },
+    {
+        "merged": "C:\\DadWorkspace\\Invoicer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\bbui_ets.9.png",
+        "source": "C:\\DadWorkspace\\Invoicer\\app\\src\\main\\res\\drawable-ldpi\\bbui_ets.9.png"
+    },
+    {
+        "merged": "C:\\DadWorkspace\\Invoicer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\bbui_etn.9.png",
+        "source": "C:\\DadWorkspace\\Invoicer\\app\\src\\main\\res\\drawable-ldpi\\bbui_etn.9.png"
+    }
+]

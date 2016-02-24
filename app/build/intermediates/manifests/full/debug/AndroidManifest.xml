@@ -1,56 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.d7knight.invoicer.activities"
+    package="org.mangelok.invoicer.activities"
     android:versionCode="5"
     android:versionName="1.4" >
 
     <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="22" />
+        android:minSdkVersion="21"
+        android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
     </uses-permission>
-
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
 
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="org.d7knight.invoicer.activities.FirstTime"
+            android:name="org.mangelok.invoicer.activities.FirstTime"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="org.d7knight.invoicer.activities.Step3"
+            android:name="org.mangelok.invoicer.activities.Step3"
             android:configChanges="orientation"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="org.d7knight.invoicer.activities.ManageProducts"
+            android:name="org.mangelok.invoicer.activities.PriceEditor"
             android:configChanges="orientation"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="org.d7knight.invoicer.activities.Step2"
+            android:name="org.mangelok.invoicer.activities.Step2"
             android:configChanges="orientation"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="org.d7knight.invoicer.activities.ViewerHtml"
+            android:name="org.mangelok.invoicer.activities.ViewHTM"
             android:configChanges="orientation"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="org.d7knight.invoicer.activities.ManageInvoices"
+            android:name="org.mangelok.invoicer.activities.ViewList"
             android:configChanges="orientation"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="org.d7knight.invoicer.activities.Step1"
+            android:name="org.mangelok.invoicer.activities.Step1"
             android:configChanges="orientation"
             android:label="@string/app_name" >
             <intent-filter>
@@ -58,18 +53,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name="org.d7knight.invoicer.activities.StartActivity"
-            android:label="@string/title_activity_start" >
-        </activity>
-        <activity
-            android:name="org.d7knight.invoicer.activities.ManageContacts"
-            android:label="@string/title_activity_manage_contacts" >
-        </activity>
-        <activity
-            android:name="org.d7knight.invoicer.utilities.BaseActivity"
-            android:label="@string/title_activity_base" >
         </activity>
     </application>
 

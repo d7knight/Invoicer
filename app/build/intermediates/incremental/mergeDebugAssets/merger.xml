@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\DadWorkspace\Invoicer\app\src\main\assets"><file name="bcard.png" path="C:\DadWorkspace\Invoicer\app\src\main\assets\bcard.png"/><file name="invoice.htm" path="C:\DadWorkspace\Invoicer\app\src\main\assets\invoice.htm"/></source></dataSet><dataSet config="debug"><source path="C:\DadWorkspace\Invoicer\app\src\debug\assets"/></dataSet></merger>

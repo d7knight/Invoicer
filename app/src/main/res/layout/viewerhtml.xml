@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        style="@style/fillw24"
+        android:onClick="create"
+        android:text="@string/viewer_create" >
+    </Button>
+
+    <Button
+        style="@style/fillw24"
+        android:onClick="send"
+        android:text="@string/send" >
+    </Button>
+
+    <WebView 
+        android:id="@+id/viewer_html"
+        style="@style/fillw24" >
+    </WebView>
+
+</LinearLayout>

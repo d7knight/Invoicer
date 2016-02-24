@@ -1,47 +1,54 @@
 <!--STARTSTYLE-->
 <style type="text/css">
-body{width:750px;}
+    body {width:750px;}
+    .largecell {width:150px;}
+    .mediumcell {width:100px;}
+    #headerspace {width:300px;}
+    #invoicetitledate {width:250px}
+    #companyname {width:250px}
+    #invoicetitle {font-size: 200%;}
 </style>
 <!--ENDSTYLE-->
 <!--STARTHEADER-->
 <table border="0" cellpadding="0" cellspacing="1">
-	    <tr>
-	        <td><font size="4" align="top">CMP_NAME5LINES</font><br></td>
-	        <td width="200">&nbsp;</td>
-	        <td><font size="6"><strong>INVTITLE</strong></font><br>
-	        Date: DATE<br>
-	        Invtitle Number: NUMBER<br><br></td>
-	    </tr>
+    <tr>
+        <td id="companyname">CMP_NAME5LINES<br/></td>
+        <td id="headerspace">&nbsp;</td>
+        <td id="invoicetitledate">
+            <div id="invoicetitle"><b>INVTITLE</b></div>
+            Date: DATE<br/>
+            Invtitle Number: NUMBER<br/><br/></td>
+    </tr>
 </table>
 <!--ENDHEADER-->
 
 <!--STARTCUSTINFO-->
-<p><strong>Invtitle for:</strong><br>
-Customer<br>
-Address<br>
-Phone<br></p>
+<p><b>Invtitle for:</b><br/>
+Customer<br/>
+Address<br/>
+Phone<br/></p>
 <!--ENDCUSTINFO-->
 
 <!--STARTPRODUCTS-->
 <table border="0">
     <tr>
-        <td width="150"><u>ITEM NAME</u></td>
-        <td width="150"><u>UNIT PRICE</u></td>
-        <td width="100"><u>QTY</u></td>
-        <td width="100"><u>LINE PRICE</u></td>
-        <td width="100"><u>COMMENTS</u></td>
+        <td class="largecell"><u>ITEM NAME</u></td>
+        <td class="largecell"><u>UNIT PRICE</u></td>
+        <td class="mediumcell"><u>QTY</u></td>
+        <td class="mediumcell"><u>LINE PRICE</u></td>
+        <td class="mediumcell"><u>COMMENTS</u></td>
     </tr>
-<!--STARTCONTENTS-->    
+    <!--STARTCONTENTS-->
     <tr>
-        <td width="150">INAME</td>
-        <td width="150">IPRICE</td>
-        <td width="100">IQTY</td>
-        <td width="100">LPRICE</td>
-        <td width="100">ICMT</t>
+        <td class="largecell">INAME</td>
+        <td class="largecell">IPRICE</td>
+        <td class="mediumcell">IQTY</td>
+        <td class="mediumcell">LPRICE</td>
+        <td class="mediumcell">ICMT</td>
     </tr>
-<!--ENDCONTENTS-->
+    <!--ENDCONTENTS-->
 </table>
-<p>Subtotal: SBTTL<br>
-Tax Due (TXNM&#64;TXRT&#37;): TXDU<br>
-Total: TTL</p>
+<p>Subtotal: SBTTL<br/>
+    Tax Due (TXNM&#64;TXRT&#37;): TXDU<br/>
+    Total: TTL</p>
 <!--ENDPRODUCTS-->

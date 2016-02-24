@@ -4,7 +4,7 @@
     <string name="app_name">Invoicer</string>
     <string name="ft_toptxt">Thank you for installing Invoicer: an easy to use invoice app intended for 
         small businesses.\nIf you have any feedback 
-        regarding this application, feel free to send me an email at d7knight@gmail.com\n\n\nTo get started, please fill in the required information below.\n
+        regarding this application, feel free to send me an email at makbusiness123@gmail.com\n\n\nTo get started, please fill in the required information below.\n
         When you are finished, select the Next button.\nYou can access this menu at any time by using
          the Menu button after completing the initial setup.\n\n</string>
     <string name="ft_tax">Tax percentage</string>
@@ -61,14 +61,4 @@
 	<string name="tst_elio">IOException on logo change.</string>
 	<string name="tst_ecmpn">Please enter your company\'s name and/or address.</string>
 	<string name="tst_eprod">Please add a product first.</string>
-
-    <string name="hello_world">Hello</string>
-    <string name="title_activity_start">StartActivity</string>
-    <string name="action_settings">Settings</string>
-    <string name="start_contacts">Manage Contacts</string>
-    <string name="start_products">Manage Products</string>
-    <string name="manage_invoices">Manage Invoices</string>
-    <string name="start_welcome">Welcome!</string>
-    <string name="title_activity_manage_contacts">ManageContacts</string>
-    <string name="title_activity_base">BaseActivity</string>
 </resources>
